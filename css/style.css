@@ -17,7 +17,7 @@ body {
 
 .header {
   position: relative;
-  background-image: radial-gradient(#0c0500dc 100%, #00000018), url(../img4.jpg);
+  background-image: radial-gradient(#0c0500dc 100%, #00000018), url(../img/img4.jpg);
   background-size: cover;
   background-position-y: bottom;
   display: grid;
@@ -26,7 +26,7 @@ body {
   background-attachment: fixed; }
   @media only screen and (max-width: 58.8em) {
     .header {
-      background-image: radial-gradient(#0c0500dc 100%, #00000018), url(../img4.jpg);
+      background-image: radial-gradient(#0c0500dc 100%, #00000018), url(../img/img4.jpg);
       background-size: cover;
       background-position-x: center; } }
 

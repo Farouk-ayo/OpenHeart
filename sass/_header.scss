@@ -1,6 +1,7 @@
 .header {
   position: relative;
-  background-image: radial-gradient(#0c0500dc 100%, #00000018), url(../img4.jpg);
+  background-image: radial-gradient(#0c0500dc 100%, #00000018),
+    url(../img/img4.jpg);
   background-size: cover;
   background-position-y: bottom;
   display: grid;
@@ -9,7 +10,7 @@
   background-attachment: fixed;
   @include respond(tab-port) {
     background-image: radial-gradient(#0c0500dc 100%, #00000018),
-      url(../img4.jpg);
+      url(../img/img4.jpg);
     background-size: cover;
     background-position-x: center;
   }
