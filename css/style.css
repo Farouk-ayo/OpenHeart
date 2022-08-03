@@ -1,0 +1,672 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+.header {
+  position: relative;
+  background-image: radial-gradient(#0c0500dc 100%, #00000018), url(../img4.jpg);
+  background-size: cover;
+  background-position-y: bottom;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-attachment: fixed; }
+  @media only screen and (max-width: 58.8em) {
+    .header {
+      background-image: radial-gradient(#0c0500dc 100%, #00000018), url(../img4.jpg);
+      background-size: cover;
+      background-position-x: center; } }
+
+.main {
+  display: flex;
+  justify-content: center; }
+  @media only screen and (max-width: 58.8em) {
+    .main {
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 5rem; } }
+  .main .main--auto {
+    width: 50rem;
+    background-color: white;
+    position: relative;
+    z-index: 20; }
+    @media only screen and (min-width: 93.75em) {
+      .main .main--auto {
+        width: 70rem; } }
+    @media only screen and (max-width: 58.8em) {
+      .main .main--auto {
+        width: 60%;
+        margin: auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .main .main--auto {
+        width: 45rem; } }
+    @media only screen and (max-width: 25em) {
+      .main .main--auto {
+        width: 100%; } }
+
+.volunteer--sector {
+  display: flex;
+  flex-direction: row; }
+  @media only screen and (max-width: 25em) {
+    .volunteer--sector {
+      flex-direction: column; } }
+
+.volunteer {
+  position: relative; }
+  .volunteer figcaption {
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    background-color: white;
+    text-transform: uppercase; }
+
+.volunteer--img {
+  width: 25rem;
+  height: 30rem;
+  object-fit: cover; }
+  @media only screen and (max-width: 25em) {
+    .volunteer--img {
+      width: 100%; } }
+
+.volunteer--article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 1rem; }
+  .volunteer--article h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Patua One", cursive;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase; }
+  .volunteer--article p {
+    font-size: 1.1rem; }
+
+.grays {
+  color: #868484; }
+
+.mission--sector {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem; }
+  .mission--sector h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Patua One", cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black; }
+  .mission--sector p {
+    font-size: 1.1rem; }
+
+.report {
+  display: flex;
+  gap: 2rem; }
+  .report h6 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Patua One", cursive;
+    font-weight: 400;
+    color: black;
+    font-size: 1.2rem; }
+  .report .number {
+    font-size: 3rem;
+    margin-right: 2.5rem; }
+
+.donate--sector {
+  padding: 3rem 2rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; }
+
+.each--sector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 50%;
+  padding-bottom: 2rem; }
+  @media only screen and (max-width: 25em) {
+    .each--sector {
+      width: 100%; } }
+
+.each {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem; }
+  .each h3 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Patua One", cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #868484;
+    text-transform: uppercase; }
+  .each .active {
+    color: black; }
+  .each p {
+    color: #868484;
+    font-size: 1.1rem; }
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .gallery .img--sector {
+    width: 50%;
+    height: 17rem;
+    position: relative; }
+    .gallery .img--sector figcaption {
+      opacity: 0;
+      transition: all 0.5s; }
+    .gallery .img--sector .figcaption--active,
+    .gallery .img--sector:hover figcaption {
+      position: absolute;
+      font-size: 2.5rem;
+      color: white;
+      font-family: "Patua One", cursive;
+      font-weight: 400;
+      color: white;
+      text-align: center;
+      transform: translateY(-130%) translateX(60%);
+      opacity: 100;
+      z-index: 1;
+      cursor: pointer; }
+      .gallery .img--sector .figcaption--active p,
+      .gallery .img--sector:hover figcaption p {
+        width: 70%;
+        margin: auto; }
+    .gallery .img--sector .eachsector--img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+      .gallery .img--sector .eachsector--img:hover {
+        filter: brightness(30%); }
+
+.eachsector--active {
+  filter: brightness(30%); }
+
+.success--section {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem; }
+  @media only screen and (max-width: 58.8em) {
+    .success--section {
+      flex-direction: column; } }
+
+.success--img {
+  position: relative;
+  width: 67rem;
+  height: 25rem;
+  align-self: flex-end;
+  background-color: #868484; }
+  @media only screen and (max-width: 93.75em) {
+    .success--img {
+      width: 80rem; } }
+  @media only screen and (max-width: 58.8em) {
+    .success--img {
+      width: 100%;
+      height: 30rem;
+      margin-top: 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .success--img {
+      margin-top: 20rem;
+      height: 20rem; } }
+
+.suc--img {
+  width: 65rem;
+  height: 43rem;
+  top: -17.9rem;
+  left: 5rem;
+  position: absolute;
+  z-index: 100;
+  overflow: hidden; }
+  @media only screen and (max-width: 58.8em) {
+    .suc--img {
+      height: 50rem;
+      top: -20rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .suc--img {
+      transform: scale(0.8);
+      margin-left: -20rem;
+      top: -25rem; } }
+  @media only screen and (max-width: 25em) {
+    .suc--img {
+      transform: scale(0.6);
+      top: -20rem; } }
+
+.success--sector {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; }
+  @media only screen and (max-width: 58.8em) {
+    .success--sector {
+      padding: 5rem 0rem; } }
+
+.success--stories {
+  width: 58%;
+  margin: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .success--stories {
+      width: 80%; } }
+  .success--stories h3 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Patua One", cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black; }
+  .success--stories p {
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 1rem; }
+    .success--stories p::before {
+      content: "\201C";
+      position: absolute;
+      font-size: 15rem;
+      top: -2rem;
+      left: -6rem; }
+    .success--stories p::after {
+      content: "\201D";
+      position: absolute;
+      font-size: 5rem;
+      bottom: -3rem;
+      margin-left: 1rem; }
+  .success--stories h6 {
+    font-size: 2.5rem; }
+
+.stories {
+  margin-left: 7rem; }
+
+.footer {
+  width: 100%;
+  background-color: #110600; }
+
+.footer--sector {
+  display: flex;
+  padding: 5rem 0;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto; }
+  @media only screen and (max-width: 58.8em) {
+    .footer--sector {
+      width: 90%;
+      flex-wrap: wrap;
+      gap: 5rem;
+      justify-content: center; } }
+
+.arsh > * {
+  color: rgba(134, 132, 132, 0.781) !important; }
+
+.list--items {
+  color: #f0f0f0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+  .list--items li {
+    font-size: 1.3rem;
+    text-transform: uppercase; }
+  .list--items::before {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%; }
+
+.credential {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: rgba(134, 132, 132, 0.781); }
+
+.street {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+  .street p {
+    font-size: 1.3rem; }
+  .street h3 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Patua One", cursive;
+    font-weight: 400; }
+
+.newsletter h3 {
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.whites {
+  color: white; }
+
+.nav--sector {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  margin-top: 2rem;
+  position: relative; }
+  @media only screen and (max-width: 58.8em) {
+    .nav--sector {
+      display: none; } }
+  .nav--sector ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none; }
+    .nav--sector ul li {
+      cursor: pointer; }
+      .nav--sector ul li:hover a {
+        color: #110600; }
+      .nav--sector ul li a {
+        text-transform: uppercase;
+        position: relative;
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+        width: 15rem;
+        height: 3rem;
+        z-index: 21; }
+      .nav--sector ul li::before {
+        content: "";
+        position: absolute;
+        height: 3rem;
+        width: 0rem;
+        transition: width 0.3s;
+        color: white; }
+      .nav--sector ul li:hover::before {
+        content: "";
+        position: absolute;
+        height: 3rem;
+        right: 0;
+        margin-top: -0.5rem;
+        transform: skewX(-15deg);
+        background-color: #f0a500;
+        width: 15rem; }
+
+.article--left {
+  grid-column: 2/5;
+  grid-row: 4/-1;
+  color: white; }
+  @media only screen and (max-width: 58.8em) {
+    .article--left {
+      grid-column: 1/5;
+      grid-row: 2/4;
+      margin-top: 5rem;
+      position: relative; } }
+  .article--left p {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: right; }
+
+.second--color {
+  color: #f0a500;
+  font-size: 2.3rem;
+  text-align: left; }
+
+.article--right {
+  width: 100%;
+  grid-column: 6/8;
+  grid-row: 3/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 58.8em) {
+    .article--right {
+      grid-column: 5/-1; } }
+  .article--right .right--container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+  .article--right .right {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    left: 0;
+    gap: 0.6rem; }
+  .article--right h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Patua One", cursive;
+    font-weight: 400; }
+
+.login--in {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #868484; }
+
+.footer--login {
+  width: 70%; }
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  background-color: #110600;
+  z-index: 200;
+  flex-direction: column;
+  justify-content: space-around;
+  opacity: 0;
+  transition: all 0.5s; }
+
+.navbar__checkbox {
+  display: none; }
+  .navbar__checkbox:checked ~ .navbar {
+    display: flex;
+    height: 50rem;
+    width: 100%;
+    opacity: 1; }
+
+.navbar__button {
+  z-index: 305;
+  position: fixed;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  align-items: center;
+  width: 6rem;
+  height: 5rem;
+  top: 2rem;
+  right: 2rem;
+  background-color: transparent;
+  border: 1px solid #110600;
+  cursor: pointer; }
+  .navbar__button:hover .navbar__icon::after {
+    top: 1.1rem; }
+  .navbar__button:hover .navbar__icon::before {
+    top: -1.1rem; }
+  @media only screen and (max-width: 75em) {
+    .navbar__button {
+      display: flex; } }
+
+.navbar__icon {
+  position: relative;
+  gap: 0.5rem;
+  width: 2.5rem; }
+  .navbar__icon, .navbar__icon::after, .navbar__icon::before {
+    height: 0.4rem;
+    background-color: #f0a500; }
+  .navbar__icon::after, .navbar__icon::before {
+    content: "";
+    position: absolute;
+    left: 0; }
+  .navbar__icon::before {
+    width: 2rem;
+    top: 1rem; }
+  .navbar__icon::after {
+    width: 3rem;
+    top: -1rem; }
+
+.navbar--toggle__toggler {
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 6rem; }
+  .navbar--toggle__toggler li {
+    width: 25rem;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    cursor: pointer; }
+    .navbar--toggle__toggler li:hover a {
+      color: #110600; }
+    .navbar--toggle__toggler li::before {
+      content: "";
+      position: absolute;
+      height: 5rem;
+      transform: scaleY(0);
+      left: 0;
+      width: 0rem;
+      transition: width 0.5s; }
+    .navbar--toggle__toggler li:hover::before {
+      content: "";
+      position: absolute;
+      height: 5rem;
+      transform: scaleY(1) skewX(-15deg);
+      left: 0;
+      background-color: #f0a500;
+      width: 25rem; }
+    .navbar--toggle__toggler li a, .navbar--toggle__toggler li:link, .navbar--toggle__toggler li:visited {
+      position: inherit;
+      text-decoration: none;
+      color: white;
+      font-size: 3rem; }
+
+.love {
+  font-size: 4rem;
+  color: white; }
+
+.logo--sector {
+  grid-column: 5/6; }
+  .logo--sector h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Patua One", cursive;
+    font-weight: 400; }
+
+.highlight {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: gray; }
+
+.svgs {
+  width: 5rem;
+  height: 5rem; }
+
+.login {
+  position: relative; }
+
+.login--in {
+  position: absolute;
+  display: flex;
+  align-items: flex-end; }
+
+.search {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.2rem; }
+
+.join--btn {
+  position: relative;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1rem 0rem;
+  border: none;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Patua One", cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #110600;
+  background-color: #f0a500;
+  cursor: pointer; }
+  .join--btn::before {
+    content: "join now!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #f0a500;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 50%, 100% 100%, 0 100%);
+    background-color: #110600;
+    z-index: 12; }
+
+.donate--btn {
+  position: relative;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1rem 0rem;
+  border: none;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Patua One", cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #f0a500;
+  background-color: #110600;
+  cursor: pointer; }
+  .donate--btn::before {
+    content: "Donate now!!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #110600;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%, 5% 50%);
+    background-color: #f0a500;
+    z-index: 12; }
+
+.svgs--big {
+  width: 5rem;
+  height: 5rem;
+  color: #868484; }
